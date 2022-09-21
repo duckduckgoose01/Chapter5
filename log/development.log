@@ -446,3 +446,868 @@ Processing by StaticPagesController#about as HTML
 Completed 200 OK in 6ms (Views: 5.7ms | ActiveRecord: 0.0ms | Allocations: 2459)
 
 
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:27:04 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 122.0ms | Allocations: 39198)
+  Rendered layout layouts/application.html.erb (Duration: 150.8ms | Allocations: 41923)
+Completed 200 OK in 166ms (Views: 156.2ms | ActiveRecord: 0.0ms | Allocations: 45315)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:28:50 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 15.1ms | Allocations: 9215)
+  Rendered layout layouts/application.html.erb (Duration: 15.5ms | Allocations: 9314)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 10177)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="center jumbotron">
+    <h1>Welcome to the Sample App</h1>
+
+    <h2>
+        This is the home page for the
+        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+        sample application
+    </h2>
+
+    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+<img alt="Rails logo" width="200px" src="/assets/rails-<long string>.svg">                     "https://rubyonrails.org/" %>
+):
+1:    <div class="center jumbotron">
+2:        <h1>Welcome to the Sample App</h1>
+3:    
+4:        <h2>
+5:            This is the home page for the
+6:            <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+7:            sample application
+8:        </h2>
+9:    
+10:        <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+11:    </div>
+12:    
+13:    <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+14:    <img alt="Rails logo" width="200px" src="/assets/rails-<long string>.svg">                     "https://rubyonrails.org/" %>
+  
+app/views/static_pages/home.html.erb:14: syntax error, unexpected '<'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected '<'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected '<'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected '<'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected '<'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected '<'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+app/views/static_pages/home.html.erb:14: syntax error, unexpected local variable or method, expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:29:09 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1147)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 1236)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2037)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="center jumbotron">
+    <h1>Welcome to the Sample App</h1>
+
+    <h2>
+        This is the home page for the
+        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+        sample application
+    </h2>
+    <img alt="Rails logo" width="200px" src="/assets/rails-<long string>.svg">                     "https://rubyonrails.o
+    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+rg/" %>
+):
+1:    <div class="center jumbotron">
+2:        <h1>Welcome to the Sample App</h1>
+3:    
+4:        <h2>
+5:            This is the home page for the
+6:            <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+7:            sample application
+8:        </h2>
+9:        <img alt="Rails logo" width="200px" src="/assets/rails-<long string>.svg">                     "https://rubyonrails.o
+10:        <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+11:    </div>
+12:    
+13:    <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+14:    rg/" %>
+  
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:29:20 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1671)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 1782)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 5115)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="center jumbotron">
+    <h1>Welcome to the Sample App</h1>
+
+    <h2>
+        This is the home page for the
+        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+        sample application
+    </h2>
+    <img alt="Rails logo" width="200px" src="/assets/rails-<long string>.svg">                     "https://rubyonrails.o
+    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+rg/" %>
+):
+1:    <div class="center jumbotron">
+2:        <h1>Welcome to the Sample App</h1>
+3:    
+4:        <h2>
+5:            This is the home page for the
+6:            <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+7:            sample application
+8:        </h2>
+9:        <img alt="Rails logo" width="200px" src="/assets/rails-<long string>.svg">                     "https://rubyonrails.o
+10:        <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+11:    </div>
+12:    
+13:    <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+14:    rg/" %>
+  
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:29:21 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 1110)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1191)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1458)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="center jumbotron">
+    <h1>Welcome to the Sample App</h1>
+
+    <h2>
+        This is the home page for the
+        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+        sample application
+    </h2>
+    <img alt="Rails logo" width="200px" src="/assets/rails-<long string>.svg">                     "https://rubyonrails.o
+    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+rg/" %>
+):
+1:    <div class="center jumbotron">
+2:        <h1>Welcome to the Sample App</h1>
+3:    
+4:        <h2>
+5:            This is the home page for the
+6:            <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+7:            sample application
+8:        </h2>
+9:        <img alt="Rails logo" width="200px" src="/assets/rails-<long string>.svg">                     "https://rubyonrails.o
+10:        <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+11:    </div>
+12:    
+13:    <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+14:    rg/" %>
+  
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:29:22 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1106)
+  Rendered layout layouts/application.html.erb (Duration: 0.7ms | Allocations: 1187)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1414)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="center jumbotron">
+    <h1>Welcome to the Sample App</h1>
+
+    <h2>
+        This is the home page for the
+        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+        sample application
+    </h2>
+    <img alt="Rails logo" width="200px" src="/assets/rails-<long string>.svg">                     "https://rubyonrails.o
+    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+rg/" %>
+):
+1:    <div class="center jumbotron">
+2:        <h1>Welcome to the Sample App</h1>
+3:    
+4:        <h2>
+5:            This is the home page for the
+6:            <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+7:            sample application
+8:        </h2>
+9:        <img alt="Rails logo" width="200px" src="/assets/rails-<long string>.svg">                     "https://rubyonrails.o
+10:        <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+11:    </div>
+12:    
+13:    <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+14:    rg/" %>
+  
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:29:44 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 1146)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1236)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2022)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="center jumbotron">
+    <h1>Welcome to the Sample App</h1>
+
+    <h2>
+        This is the home page for the
+        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+        sample application
+    </h2>
+    <img alt="Rails logo" width="200px" src="/assets/rails-<long string>.svg">          
+    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+rg/" %>
+):
+1:    <div class="center jumbotron">
+2:        <h1>Welcome to the Sample App</h1>
+3:    
+4:        <h2>
+5:            This is the home page for the
+6:            <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+7:            sample application
+8:        </h2>
+9:        <img alt="Rails logo" width="200px" src="/assets/rails-<long string>.svg">          
+10:        <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+11:    </div>
+12:    
+13:    <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+14:    rg/" %>
+  
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:16: unterminated string meets end of file
+app/views/static_pages/home.html.erb:16: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:29:53 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 0.7ms | Allocations: 1144)
+  Rendered layout layouts/application.html.erb (Duration: 0.9ms | Allocations: 1233)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2030)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="center jumbotron">
+    <h1>Welcome to the Sample App</h1>
+
+    <h2>
+        This is the home page for the
+        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+        sample application
+    </h2>        
+    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+rg/" %>
+):
+1:    <div class="center jumbotron">
+2:        <h1>Welcome to the Sample App</h1>
+3:    
+4:        <h2>
+5:            This is the home page for the
+6:            <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+7:            sample application
+8:        </h2>        
+9:        <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+10:    </div>
+11:    
+12:    <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+13:    rg/" %>
+  
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:29:55 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.3ms | Allocations: 1104)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 1184)
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms | Allocations: 1426)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="center jumbotron">
+    <h1>Welcome to the Sample App</h1>
+
+    <h2>
+        This is the home page for the
+        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+        sample application
+    </h2>        
+    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+rg/" %>
+):
+1:    <div class="center jumbotron">
+2:        <h1>Welcome to the Sample App</h1>
+3:    
+4:        <h2>
+5:            This is the home page for the
+6:            <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+7:            sample application
+8:        </h2>        
+9:        <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+10:    </div>
+11:    
+12:    <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+13:    rg/" %>
+  
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:30:07 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1670)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1781)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 5113)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="center jumbotron">
+    <h1>Welcome to the Sample App</h1>
+
+    <h2>
+        This is the home page for the
+        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+        sample application
+    </h2>        
+    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+rg/" %>
+):
+1:    <div class="center jumbotron">
+2:        <h1>Welcome to the Sample App</h1>
+3:    
+4:        <h2>
+5:            This is the home page for the
+6:            <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+7:            sample application
+8:        </h2>        
+9:        <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+10:    </div>
+11:    
+12:    <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+13:    rg/" %>
+  
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:30:10 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1109)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1190)
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 1457)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="center jumbotron">
+    <h1>Welcome to the Sample App</h1>
+
+    <h2>
+        This is the home page for the
+        <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+        sample application
+    </h2>        
+    <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+</div>
+
+<%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+rg/" %>
+):
+1:    <div class="center jumbotron">
+2:        <h1>Welcome to the Sample App</h1>
+3:    
+4:        <h2>
+5:            This is the home page for the
+6:            <a href="https://www.railstutorial.org/">Ruby on Rails Tutorial</a>
+7:            sample application
+8:        </h2>        
+9:        <%= link_to "Sign up now!", '#', class: "btn btn-lg btn-primary" %>
+10:    </div>
+11:    
+12:    <%= link_to image_tag("rails.svg", alt: "Rails logo", width: "200"),
+13:    rg/" %>
+  
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/static_pages/home.html.erb:15: unterminated string meets end of file
+app/views/static_pages/home.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:30:43 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 64.1ms | Allocations: 31872)
+  Rendered layout layouts/application.html.erb (Duration: 71.0ms | Allocations: 34558)
+Completed 200 OK in 75ms (Views: 73.2ms | ActiveRecord: 0.0ms | Allocations: 35415)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:31:10 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1706)
+  Rendered layout layouts/application.html.erb (Duration: 6.4ms | Allocations: 4285)
+Completed 200 OK in 11ms (Views: 9.7ms | ActiveRecord: 0.0ms | Allocations: 5127)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/rails-%3Clong%20string%3E.svg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:38:59 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 951.6ms | Allocations: 118638)
+  Rendered layout layouts/application.html.erb (Duration: 952.1ms | Allocations: 118766)
+Completed 500 Internal Server Error in 961ms (ActiveRecord: 0.0ms | Allocations: 122099)
+
+
+  
+ActionView::Template::Error (Error: File to import not found or unreadable: bootstrap-sprokets.
+        on line 1:1 of app/assets/stylesheets/custom.scss
+>> @import "bootstrap-sprokets";
+
+   ^
+):
+  
+app/assets/stylesheets/custom.scss:1
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:39:32 -0400
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 853.7ms | Allocations: 132753)
+  Rendered layout layouts/application.html.erb (Duration: 869.0ms | Allocations: 140171)
+Completed 200 OK in 879ms (Views: 872.9ms | ActiveRecord: 0.0ms | Allocations: 143563)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/rails-%3Clong%20string%3E.svg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:44:21 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.9ms | Allocations: 1508)
+  Rendered layout layouts/application.html.erb (Duration: 542.7ms | Allocations: 68169)
+Completed 200 OK in 544ms (Views: 543.2ms | ActiveRecord: 0.0ms | Allocations: 68465)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/rails-%3Clong%20string%3E.svg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:44:30 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1401)
+  Rendered layout layouts/application.html.erb (Duration: 496.1ms | Allocations: 68393)
+Completed 200 OK in 497ms (Views: 496.5ms | ActiveRecord: 0.0ms | Allocations: 68641)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/rails-%3Clong%20string%3E.svg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:44:36 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1401)
+  Rendered layout layouts/application.html.erb (Duration: 10.3ms | Allocations: 8165)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms | Allocations: 8416)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/rails-%3Clong%20string%3E.svg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-21 10:47:03 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1402)
+  Rendered layout layouts/application.html.erb (Duration: 501.4ms | Allocations: 68932)
+Completed 200 OK in 503ms (Views: 502.0ms | Allocations: 69178)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/rails-%3Clong%20string%3E.svg"):
+  
+Started GET "/" for 127.0.0.1 at 2022-09-21 11:00:37 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1727)
+  Rendered layout layouts/application.html.erb (Duration: 505.9ms | Allocations: 71494)
+Completed 500 Internal Server Error in 509ms (Allocations: 72281)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_shim with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/davidshapiro/Desktop - Duck Duck Goose pro/Brandeis/Junior Year/Semester 1/Classes/Software Engineering/Programming Assignments/Ruby On Rails/Chapter 5/sample_app2/app/views"
+  * "/Users/davidshapiro/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actiontext-7.0.4/app/views"
+  * "/Users/davidshapiro/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionmailbox-7.0.4/app/views"
+
+Did you mean?  layouts/header
+               layouts/footer
+               layouts/action_text/contents/content
+               action_text/attachables/missing_attachable
+               action_text/attachment_galleries/attachment_gallery
+               active_storage/blobs/blob):
+     8:     <%= csp_meta_tag %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    11:     <%= render 'layouts/shim' %>
+    12:   </head>
+    13: 
+    14:   <body>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for 127.0.0.1 at 2022-09-21 11:00:51 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1726)
+  Rendered layout layouts/application.html.erb (Duration: 14.6ms | Allocations: 10433)
+Completed 500 Internal Server Error in 19ms (Allocations: 11221)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_shim with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/davidshapiro/Desktop - Duck Duck Goose pro/Brandeis/Junior Year/Semester 1/Classes/Software Engineering/Programming Assignments/Ruby On Rails/Chapter 5/sample_app2/app/views"
+  * "/Users/davidshapiro/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actiontext-7.0.4/app/views"
+  * "/Users/davidshapiro/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionmailbox-7.0.4/app/views"
+
+Did you mean?  layouts/header
+               layouts/footer
+               layouts/action_text/contents/content
+               action_text/attachables/missing_attachable
+               action_text/attachment_galleries/attachment_gallery
+               active_storage/blobs/blob):
+     8:     <%= csp_meta_tag %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    11:     <%= render 'layouts/shim' %>
+    12:   </head>
+    13: 
+    14:   <body>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for 127.0.0.1 at 2022-09-21 11:00:53 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1402)
+  Rendered layout layouts/application.html.erb (Duration: 12.3ms | Allocations: 9682)
+Completed 500 Internal Server Error in 14ms (Allocations: 9923)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/_shim with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/davidshapiro/Desktop - Duck Duck Goose pro/Brandeis/Junior Year/Semester 1/Classes/Software Engineering/Programming Assignments/Ruby On Rails/Chapter 5/sample_app2/app/views"
+  * "/Users/davidshapiro/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actiontext-7.0.4/app/views"
+  * "/Users/davidshapiro/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionmailbox-7.0.4/app/views"
+
+Did you mean?  layouts/header
+               layouts/footer
+               layouts/action_text/contents/content
+               action_text/attachables/missing_attachable
+               action_text/attachment_galleries/attachment_gallery
+               active_storage/blobs/blob):
+     8:     <%= csp_meta_tag %>
+     9: 
+    10:     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    11:     <%= render 'layouts/shim' %>
+    12:   </head>
+    13: 
+    14:   <body>
+  
+app/views/layouts/application.html.erb:11
+Started GET "/" for 127.0.0.1 at 2022-09-21 11:01:30 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1726)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 10652)
+Completed 500 Internal Server Error in 20ms (Allocations: 11422)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/__header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/davidshapiro/Desktop - Duck Duck Goose pro/Brandeis/Junior Year/Semester 1/Classes/Software Engineering/Programming Assignments/Ruby On Rails/Chapter 5/sample_app2/app/views"
+  * "/Users/davidshapiro/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actiontext-7.0.4/app/views"
+  * "/Users/davidshapiro/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionmailbox-7.0.4/app/views"
+
+Did you mean?  layouts/header
+               layouts/footer
+               layouts/shim
+               layouts/action_text/contents/content
+               active_storage/blobs/blob
+               action_text/attachables/remote_image):
+    12:   </head>
+    13: 
+    14:   <body>
+    15:     <%= render 'layouts/_header' %>
+    16:     <div class="container">
+    17:       <%= yield %>
+    18:       <%= render 'layouts/_footer' %>
+  
+app/views/layouts/application.html.erb:15
+Started GET "/" for 127.0.0.1 at 2022-09-21 11:01:31 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1402)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 9750)
+Completed 500 Internal Server Error in 16ms (Allocations: 9988)
+
+
+  
+ActionView::Template::Error (Missing partial layouts/__header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}.
+
+Searched in:
+  * "/Users/davidshapiro/Desktop - Duck Duck Goose pro/Brandeis/Junior Year/Semester 1/Classes/Software Engineering/Programming Assignments/Ruby On Rails/Chapter 5/sample_app2/app/views"
+  * "/Users/davidshapiro/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actiontext-7.0.4/app/views"
+  * "/Users/davidshapiro/.rbenv/versions/3.1.2/lib/ruby/gems/3.1.0/gems/actionmailbox-7.0.4/app/views"
+
+Did you mean?  layouts/header
+               layouts/footer
+               layouts/shim
+               layouts/action_text/contents/content
+               active_storage/blobs/blob
+               action_text/attachables/remote_image):
+    12:   </head>
+    13: 
+    14:   <body>
+    15:     <%= render 'layouts/_header' %>
+    16:     <div class="container">
+    17:       <%= yield %>
+    18:       <%= render 'layouts/_footer' %>
+  
+app/views/layouts/application.html.erb:15
+Started GET "/" for 127.0.0.1 at 2022-09-21 12:19:48 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1726)
+  Rendered layouts/_shim.html.erb (Duration: 1.8ms | Allocations: 103)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 269)
+  Rendered layouts/_footer.html.erb (Duration: 1.4ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 9528)
+Completed 200 OK in 37ms (Views: 33.8ms | Allocations: 10325)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-21 12:20:57 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1722)
+  Rendered layouts/_shim.html.erb (Duration: 0.4ms | Allocations: 103)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 267)
+  Rendered layouts/_footer.html.erb (Duration: 1.2ms | Allocations: 115)
+  Rendered layout layouts/application.html.erb (Duration: 15.6ms | Allocations: 9547)
+Completed 200 OK in 19ms (Views: 17.8ms | Allocations: 10372)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-21 12:21:09 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1722)
+  Rendered layouts/_shim.html.erb (Duration: 0.7ms | Allocations: 103)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 267)
+  Rendered layouts/_footer.html.erb (Duration: 2.3ms | Allocations: 787)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 10204)
+Completed 200 OK in 20ms (Views: 19.5ms | Allocations: 11025)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-21 12:21:25 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1729)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 103)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 267)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 182)
+  Rendered layout layouts/application.html.erb (Duration: 13.8ms | Allocations: 9607)
+Completed 200 OK in 16ms (Views: 15.3ms | Allocations: 10429)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-21 12:36:32 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1398)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 92)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 571.0ms | Allocations: 69340)
+Completed 200 OK in 572ms (Views: 571.5ms | Allocations: 69602)
+
+
+Started GET "/" for 127.0.0.1 at 2022-09-21 12:36:36 -0400
+Processing by StaticPagesController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 1402)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 92)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 44)
+  Rendered layout layouts/application.html.erb (Duration: 13.0ms | Allocations: 8384)
+Completed 200 OK in 14ms (Views: 13.4ms | Allocations: 8629)
+
+
